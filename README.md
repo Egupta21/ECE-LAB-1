@@ -51,7 +51,7 @@ To learn how to use a multi-meter and measure resistance with it. To also learn 
 
 &nbsp;
 
-## III: Materials and Objective  
+## III: Materials and Equipment  
 
 
 - 1 potentiometer  
@@ -79,7 +79,7 @@ To learn how to use a multi-meter and measure resistance with it. To also learn 
 
 &nbsp;
 
-The table above shows the data that was collected from each of the resistors using the alligator clips connected to each end of the resistor, and the multi-meter. The first column shows the calculated value of the resistor based on the color bands on it. The second column shows the experimental value of the resisitor obtained by using the multimeter. Column 3 is for the 4th strip in the resistor which is the tolerence value. The fourth column represents the range of the resistance. This is calculater by finding out what 5 percent of the color band resistance value is and then subtracting and adding the derived value to it. The last column is used the note whether the experimental value is within the calculated range in column 4.  
+The table above shows the data that was collected from each of the resistors using the alligator clips connected to each end of the resistor, and the multi-meter. The first column shows the calculated value of the resistor based on the color bands on it. The second column shows the experimental value of the resisitor obtained by using the multimeter. Column 3 is for the 4th strip in the resistor which is the tolerence value. The fourth column represents the range of the resistance. This is calculated by finding out what 5 percent of the color band resistance value is and then subtracting and adding the derived value to it. The last column is used to note whether the experimental value is within the calculated range in column 4.  
 
 &nbsp;
 
@@ -106,7 +106,7 @@ Based on the discussion and lecture in class it was expected that in part 1 the 
 
 ## VII: Conclusions and Comments
 
-From the observations made from the theoretical data and the Experimental data and how they relate with each other is is safe to say that the results of this lab could be predicted and in fact were predicted and correct. It is safe to say that when using resisitors the color bands can be used to calculate the resistors value for projects, but it would still be recommended to use a multimeter in cases where accuracy is crucial. We are also able to conclude that the potentiometer is functional and works as desired. The experimental data for the potentiometer too matches the experimental data. Through the experiment it was confirmed that what was thought in class about resistors and potentiometers was indeed correct because it matched the experimental data.
+From the observations made from the theoretical data and the experimental data and how they relate with each other, it is safe to say that the results of this lab could be predicted and in fact were predicted and correct. It is safe to say that when using resisitors the color bands can be used to calculate the resistors value for projects, but it would still be recommended to use a multimeter in cases where accuracy is crucial. We are also able to conclude that the potentiometer is functional and works as desired. The experimental data for the potentiometer too matches the experimental data. Through the experiment it was confirmed that what was thought in class about resistors and potentiometers was indeed correct because it matched the experimental data.
 
 &nbsp;
 
