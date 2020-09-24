@@ -33,11 +33,11 @@ output:
 
 ### ECE 101-203
 
-#### Lab No.1 – Laboratory 1 - Resistance
+#### Lab No.2 – Laboratory 3 - Combination Series/Parallel Circuits 
 
 #### Name: Eashan Gupta
 
-#### Date 9/7/2020
+#### Date 9/23/2020
 
 \ecenter
 
@@ -45,7 +45,7 @@ output:
 
 ## II: Objectives
 
-To learn how to use a multi-meter and measure resistance with it. To also learn how to read the color codes on resistors and understand how the potentiometer functions.
+To learn how circuits with a combination of series and parallel resistors work and how to measure the values in the circuit.
 
 &nbsp;
 
@@ -55,14 +55,16 @@ To learn how to use a multi-meter and measure resistance with it. To also learn 
 
 
 - 1 potentiometer  
-- Brown-Black-Red-Gold resistor(1.0kΩ)  
-- Red-Red-Red-Gold Resistor(2.2kΩ)  
-- Green-Brown-Orange-Gold Resistor(51kΩ)  
-- Red-Black-Brown-Gold Resistor(200Ω)  
-- Green-Brown-Red-Gold Resistor(5.1kΩ)  
+- Brown-Black-Red-Gold resistor(1.0kΩ) 2x
+- Red-Black-Brown-Gold Resistor(200Ω) 
+- Analog Discovery 2  
 - Two banana to alligator plug wires (one red one black)  
 - Multi-meter  
-- Potentiometer adjustment tool  
+- Breadboard  
+- Wire Jumper  
+- AD2 pin array
+
+
 
 &nbsp;
 
@@ -70,35 +72,46 @@ To learn how to use a multi-meter and measure resistance with it. To also learn 
 
 ## IV: Circuit Simulations
 
+![](ece-lab-3-prelab.pdf)
+\bcenter
+two 1k ohm in series 200 ohm
+\ecenter
+
+
+&nbsp;
+
+&nbsp;
+
+![](ece-lab-3-prelab2.pdf)
+\bcenter
+200ohm and 1k ohm in parallel, in series with 1k ohm
+\ecenter
+
+\newpage
+
 
 ## V: Laboratory Data
 
-![](Table1Lab1.PNG) &nbsp;
+![](ece lab 3 table.PNG) &nbsp;
+
 
 &nbsp;
 
 &nbsp;
 
-The table above shows the data that was collected from each of the resistors using the alligator clips connected to each end of the resistor, and the multi-meter. The first column shows the calculated value of the resistor based on the color bands on it. The second column shows the experimental value of the resisitor obtained by using the multimeter. Column 3 is for the 4th strip in the resistor which is the tolerence value. The fourth column represents the range of the resistance. This is calculated by finding out what 5 percent of the color band resistance value is and then subtracting and adding the derived value to it. The last column is used to note whether the experimental value is within the calculated range in column 4.  
+This table shows the experimental values for both part 1 and part 2 of the lab. In part 1 there are two 1k ohm resistors in parallel that are in series with a 200 ohm resistor. A multimeter is used to find the equivalent resistance in the circuit. The multimeter is then placed in series with each resistor one by one to find the current in the circuit at each resistor. Following this the multimeter is then placed in parallel with each resistor to find the voltage drop across each resistor.
+
+In part 2 of the lab the second 1k ohm resistor is replaced with the 200 ohm resistor. The same process from part 1 is repeated in part 2 to derive values for the equivalent resistance, current, and voltage.
+
 
 &nbsp;
 
 &nbsp;
 
-&nbsp;
-
-![](Table2Lab1.PNG)
-This table demonstrates the relation of the resistance between T1 - T2 and T2 - T3. After connecting the alligator clips to T1 and T2 each and turning the knob fully counter clockwise the value for the resistance on the multimeter will read 1.6 ohms. Now without spinning the knob simply removing the alligator clip from T1 and attaching it to T3 will make the multimeter display a value of 1027 ohms. Now, by slowly spinning the knob clockwise it is noticed that the value of the resistance between T1 and T3 decreases as the knob spins. After the knob is spun a small amount and the value of the resistance between T2 - T3 has slightly decreased, when the alligator clip on T3 is connected back to T1 it is noticed that the value of the resistance between T1 - T3 has slightly increased as read on the multimeter. This process is repeated multiple times to draft the table above. When the knob was tunred counter clockwise the table displayed the max value for the resistance between T2 and T3 and the min value between T1 and T2 and vice versa for clockwise.
-
-&nbsp;
-
-&nbsp;
 
 ## VI: Theoretical vs Experimental Data
 
-The Theoretical data for the resisitors was derived using the color bands on the resistors. For a 4 band resistor the first band represents the first number, the second band represents the second number, the third band represents the number gotten from the first 2 bands times 10^(number based on color of the bands), and the fourth band is the tolerence. So the output will be in the terms of AB * 10^C +-D% with each letter representing a value derived from each of the colored bands from first to last. We used this method to derive the expected/theoretical value of each resistor.  
-
-Based on the discussion and lecture in class it was expected that in part 1 the experimental value of the resistor would be similar to the calculated value of the resistor. For all the resisitors the experimental value was within the calculated range of the which was the expected result. For part 1 of the lab the theoretical data matches the result that we got after experimentation. In part 2 based on the theoretical data it was expected that as the knob is spun clockwise the resistance between T1 and T2 will increase and the resistance between T2 and T3 will decrease. After testing with the multimeter and alligator clips on an actual potentiometer it was determined that this holds true. As one increased the other decreased. In part 2 of the lab as well the theoretical data matches the experimental data. 
+Theoretically it is expected that using kirchoffs loop law the voltage will be divided between the 200 ohm resistor and the req of the 2 resistors in parallel based on the ratios of the resistance. The two 1k ohm resistors which are in parallel then have equal voltage. This matches the experimental value as v1 is based of the ratio of r1:r23. Also v2 = v3 as expected. The I is expected to be divided based on the resistance of the resistance and the voltage drop across each resistor. V = IR. And the experimental value is in accordance with the theoretical value. This is again seen in part 2 where in this case the 2 resistors in parallel are different resistance but the voltage is still the same. The same holds for KCL as the current distribution was as expected
 
 &nbsp;
 
@@ -106,27 +119,43 @@ Based on the discussion and lecture in class it was expected that in part 1 the 
 
 ## VII: Conclusions and Comments
 
-From the observations made from the theoretical data and the experimental data and how they relate with each other, it is safe to say that the results of this lab could be predicted and in fact were predicted and correct. It is safe to say that when using resisitors the color bands can be used to calculate the resistors value for projects, but it would still be recommended to use a multimeter in cases where accuracy is crucial. We are also able to conclude that the potentiometer is functional and works as desired. The experimental data for the potentiometer too matches the experimental data. Through the experiment it was confirmed that what was thought in class about resistors and potentiometers was indeed correct because it matched the experimental data.
-
+The theoretical data matches the experimental data which was expected. It was verified that KCL and KVL hold true in a combination circuit too. We were able to create the circuit on circuit lab and through pur experiments it was clear that the data from the experiments matches that of circuitlab. If any limitations then there is underlying resistance in the wires which slightly affect the voltage.
 &nbsp;
 
 &nbsp;
 
-## IX: Answers to Questions
+## VIII: Answers to Questions
 
-1. The tolerence shows how likely it is for the actual resistence of the resistor to be close to the calculated value. Some operations require very precise resistence which is why in those cases a resisitor with very low resistence would be preferred. The tolerence is a way to let the people using the resistor know how much their actual resistence value may deviate from the calculated value.
+1. The voltage drop across the resistor  divided by the current flowing through it equals the resistance of the resistor. (V/I = R)
 
-2. 5 band resistors would be used when we want resistors with higher resistence than that of which a 4 band resistor can offer. A 5 band resistor has an extra digit in it thus allowing us to be more precise and larger with our resistence values. A 2 band resistor can't have a resistence value of 265 based off calculation but a 3 band can making it more precise.
+2. As the voltage increases the resistance increases, whereas as the current increases the resistance decreases
 
-3. A 6 band resistor adds the measurement of temperature to the resistor. A 6 band resistor is used when the temperature of the surroundings has to be taken into account. This would likely be used at rather cold locations or hotter places (non room temperature locations).
+3. Yes this experiment does verify Ohm's law because Ohms law states that I = V/R and in this experiment we can see the same relationship between Resistance, Current and Voltage. In our experiment the voltage divided by the current consistently was similar to the actual resistance.
 
-4. No question 4
+4. Yes, there were slight differences of .01 volts between the source voltage and the resistance drop across the resistor. The reason for the difference in voltage drop across the resistor and the source voltage could be because of the resistance in the wire.
 
-5. The max resistence of the potentiometer is 1027 ohms
+5. The sum of V1 and V2 is equal to the source voltage in both parts.
 
-6. The last 2 columns display the relationship between the resistence between T1 - T2 and T2 - T3. They both add up to about 1027 ohms. As one increases the other decreases.
+6. Based on Kirchoff's Voltage law the sum of the voltage drop across resistors in a series will be equal to the source voltage. We can see in this case that that holds true as the sum of V1 and V2 in both cases does equal the source voltage.
 
-7. It can be used as a variable resistor or can be used in place of a resistor to get an accurate resistence by just spinning the knob.
+7. 
+Vs/I = Req
+V1/I = R1
+V2/I = R3
 
+R1 + R3 = Req
 
+We can see a clear relation between the resistance of the resistor and the voltage drop across the resistor. The voltage drop across the resistors is in proportion with the resistance of the resistor when in series.
+
+8. The resistor would be 3.2k ohms
+
+9. I2 + I3 is equal to I in both parts b and c
+
+10. V1 and V2 are equal to the source voltage in both parts
+
+11. Kirchoff's current law states that at a junction the current in will be equal to the current out. Also, current will be divided in a parallel circuit. In this experiment we can see that the current that enters the junction is equal to the current that leaves the junction thus following Kirchoff's current law.
+
+12. I1xR1 is equal to the voltage across resistor 1 and I2xR2 is equal to Voltage across R2 
+
+13. 687.5 Ohm resistor
 
