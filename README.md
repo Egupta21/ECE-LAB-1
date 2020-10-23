@@ -33,11 +33,11 @@ output:
 
 ### ECE 101-203
 
-#### Lab No.2 – Laboratory 3 - Combination Series/Parallel Circuits 
+#### Lab No.5 – Laboratory 5 - Introduction to the Function Generator and Oscilloscope  
 
 #### Name: Eashan Gupta
 
-#### Date 9/23/2020
+#### Date 10/23/2020
 
 \ecenter
 
@@ -45,7 +45,7 @@ output:
 
 ## II: Objectives
 
-To learn how circuits with a combination of series and parallel resistors work and how to measure the values in the circuit.
+The purpose of the lab is to learn how to use the function generator to generate sin waves of varying amplitude and frequency and also to learn how to dislplay the generated signals using an oscilloscope. The lab also teaches the about the functionality of LED's.
 
 &nbsp;
 
@@ -53,16 +53,16 @@ To learn how circuits with a combination of series and parallel resistors work a
 
 ## III: Materials and Equipment  
 
-
-- 1 potentiometer  
-- Brown-Black-Red-Gold resistor(1.0kΩ) 2x
+- Push button switch  
+- Brown-Black-Red-Gold resistor(1.0kΩ)
 - Red-Black-Brown-Gold Resistor(200Ω) 
+- 2 LEDs any color  
 - Analog Discovery 2  
+- Computer  
 - Two banana to alligator plug wires (one red one black)  
 - Multi-meter  
 - Breadboard  
 - Wire Jumper  
-- AD2 pin array
 
 
 
@@ -72,46 +72,59 @@ To learn how circuits with a combination of series and parallel resistors work a
 
 ## IV: Circuit Simulations
 
-![](ece-lab-3-prelab.pdf)
-\bcenter
-two 1k ohm in series 200 ohm
-\ecenter
 
-
-&nbsp;
-
-&nbsp;
-
-![](ece-lab-3-prelab2.pdf)
-\bcenter
-200ohm and 1k ohm in parallel, in series with 1k ohm
-\ecenter
-
-\newpage
 
 
 ## V: Laboratory Data
 
-![](ece lab 3 table.PNG) &nbsp;
+&nbsp;
 
+&nbsp;
+
+![](Lab5partC.PNG)
+![](Lab5partC2.PNG)
+\bcenter
+Sine wave and voltage drop across resistor
+\ecenter
 
 &nbsp;
 
 &nbsp;
 
-This table shows the experimental values for both part 1 and part 2 of the lab. In part 1 there are two 1k ohm resistors in parallel that are in series with a 200 ohm resistor. A multimeter is used to find the equivalent resistance in the circuit. The multimeter is then placed in series with each resistor one by one to find the current in the circuit at each resistor. Following this the multimeter is then placed in parallel with each resistor to find the voltage drop across each resistor.
-
-In part 2 of the lab the second 1k ohm resistor is replaced with the 200 ohm resistor. The same process from part 1 is repeated in part 2 to derive values for the equivalent resistance, current, and voltage.
-
+![](Lab5partd.PNG)
+![](Lab5partd2.PNG)
+\bcenter
+Sine wave with 5 volts being applied and the voltage drop
+\ecenter
 
 &nbsp;
 
 &nbsp;
 
+![](Lab5parte.PNG)
+![](Lab5parte2.PNG)
+\bcenter
+Sine wave with 5 volts and frequency 4KHz being applied and the voltage drop
+\ecenter
+
+&nbsp;
+
+&nbsp;
+
+![](Lab5part2b.PNG)
+![](Lab5part2b2.PNG)
+![](Lab5part2b3.PNG)
+![](Lab5part2b4.PNG)
+\bcenter
+Sine wave with led one way and opposite way as well as the voltage drop
+\ecenter
+\newpage
 
 ## VI: Theoretical vs Experimental Data
 
-Theoretically it is expected that using kirchoffs loop law the voltage will be divided between the 200 ohm resistor and the req of the 2 resistors in parallel based on the ratios of the resistance. The two 1k ohm resistors which are in parallel then have equal voltage. This matches the experimental value as v1 is based of the ratio of r1:r23. Also v2 = v3 as expected. The I is expected to be divided based on the resistance of the resistance and the voltage drop across each resistor. V = IR. And the experimental value is in accordance with the theoretical value. This is again seen in part 2 where in this case the 2 resistors in parallel are different resistance but the voltage is still the same. The same holds for KCL as the current distribution was as expected
+Theoretically it is expected that the when the voltage is incresed the amplitude of the sine wave will increase and this can be noticed to be true in the generated sine wave on the the waveforms function. We see in Part C and D that when the voltage is increased the voltage drop across the resistor is increased and the amplitude of the sine wave is also increased, as expected from the theoretical data. Theoretically it is expected that when the hertz increases the period will decrease as period is equal to one/hertz. When we generate the sine wave we notice that in part e when the hertz is increased to 4KHz that the period is decreased, thus holding true with our theoretical data. 
+
+In part 2 when the led is placed in a forward bias it is expected that the there will be a voltage drop when the voltage reaches a negative max. This can be observed to be true in the waveforms software as it is clear that the when v in the wave is below 0 it is different than when there is no diode. The voltage doesn't have the same peak in the negative side as in the positive side. This is because of the foward voltage of the diode which is expected. Thus we can say that the theoretical data matches the experimental data in this case. This is also the same for the when the diode is in reverse bias as in this case the graph is flipped over the y axis and it is expected.
 
 &nbsp;
 
@@ -119,43 +132,25 @@ Theoretically it is expected that using kirchoffs loop law the voltage will be d
 
 ## VII: Conclusions and Comments
 
-The theoretical data matches the experimental data which was expected. It was verified that KCL and KVL hold true in a combination circuit too. We were able to create the circuit on circuit lab and through pur experiments it was clear that the data from the experiments matches that of circuitlab. If any limitations then there is underlying resistance in the wires which slightly affect the voltage.
-&nbsp;
+It was noticed that in all the tests the theoretical data matched the experimental data as expected. There may have been accuracy errors in the data as there could have been underlying resistor and wire resistance. 
 
 &nbsp;
 
 ## VIII: Answers to Questions
 
-1. The voltage drop across the resistor  divided by the current flowing through it equals the resistance of the resistor. (V/I = R)
+1. As the amplitude is increased the graph stretches vertically and the peak voltage increases.
 
-2. As the voltage increases the resistance increases, whereas as the current increases the resistance decreases
+2. Vrms = Vpeak/sqrt(2), When the v = 2, Vrms = 1.414v. When the v = 5, the Vrms = 3.536.
+Vavg = pi/2 * Vp, When the v = 2, Vavg = 3.142. When the v = 5, the Vavg = 7.854.
 
-3. Yes this experiment does verify Ohm's law because Ohms law states that I = V/R and in this experiment we can see the same relationship between Resistance, Current and Voltage. In our experiment the voltage divided by the current consistently was similar to the actual resistance.
+To measure it with the AD2 we have to connect it to the channel, the Vrms for 2v is 1.402 and for 5v is 3.523
+ 
+3. The graph is squeezed horizontally and the period decreases.
 
-4. Yes, there were slight differences of .01 volts between the source voltage and the resistance drop across the resistor. The reason for the difference in voltage drop across the resistor and the source voltage could be because of the resistance in the wire.
+4. Frequency is the number of repetitions the sin wave completes in a second. We can look at the sine wave and look at the amount of time it takes to complete one cycle and then divide that by one to get the frequency.
 
-5. The sum of V1 and V2 is equal to the source voltage in both parts.
+5. Yes, the led is lit when it is both ways. This is because the voltage being applied is higher than the led's max forward voltage. 
 
-6. Based on Kirchoff's Voltage law the sum of the voltage drop across resistors in a series will be equal to the source voltage. We can see in this case that that holds true as the sum of V1 and V2 in both cases does equal the source voltage.
+6. When the button is pressed the switch is closed and LED2 starts to glow. Yes it is different from part a.
 
-7. 
-Vs/I = Req
-V1/I = R1
-V2/I = R3
-
-R1 + R3 = Req
-
-We can see a clear relation between the resistance of the resistor and the voltage drop across the resistor. The voltage drop across the resistors is in proportion with the resistance of the resistor when in series.
-
-8. The resistor would be 3.2k ohms
-
-9. I2 + I3 is equal to I in both parts b and c
-
-10. V1 and V2 are equal to the source voltage in both parts
-
-11. Kirchoff's current law states that at a junction the current in will be equal to the current out. Also, current will be divided in a parallel circuit. In this experiment we can see that the current that enters the junction is equal to the current that leaves the junction thus following Kirchoff's current law.
-
-12. I1xR1 is equal to the voltage across resistor 1 and I2xR2 is equal to Voltage across R2 
-
-13. 687.5 Ohm resistor
-
+7. The led is now blinking. This is because the frequency is very low. So when the led is placed in forward and the voltage is positive the led will glow and then when the sine wave voltage goes to neagative the led will stop glowing.
